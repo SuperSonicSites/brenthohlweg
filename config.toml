@@ -1,0 +1,34 @@
+baseURL = "https://www.brenthohlweg.com/"
+theme = "boot"
+relativeURLs = true
+googleAnalytics = "UA-XXX" # Your Analytics ID here
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+title= "BrentHohlweg.com | Digital Marketing & Branding Expert"
+description= "Brent holds a Fine Arts Degree from Emily Carr University of Art & Design. He brings over two decades of real world effective marketing, branding, creative and digital solutions to every project."
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+
+
+[params]
+    # Schema Information
+    businessname = "Brent Holhweg"
+    type = "LocalBusiness" # Enter Your Type of business - schema.org
+    pricerange = "2" # Enter Your Price range 1 to 5
+    reviewcount = "5" # How many reviews you've got
+    reviewvalue = "4.5" # Average ratings on Yelp & Google
+    reservation = "false" # Do you accept reservations? Enter true or false
+    openinghour = "Mo-Fr 9:00-17:00" # Opening Hours
+    address = "876 Elina Rd" # Enter Address Here
+    city = "Ucluelet" # Enter City
+    region = "BC" # Enter State or Province Here
+    country = "Canada" #Enter Country Here
+    postalcode = "V0R 3A0" # Enter Postal Code
+    phone = "+1-844-467-8326" # Enter Phone Number
+    email = "brent@steamtraincreative.com" # Enter Your Email
+    facebookurl = "https://www.facebook.com/steamtraincreative"
+    instagram = "https://instagram.com/"
+    logo = "img/logo.jpg"
+    image = "img/og.jpg" # Ideal 1200 x 630 for schema + og

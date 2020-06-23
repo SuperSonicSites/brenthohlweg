@@ -1,0 +1,71 @@
+{{ define "main" }}
+<div class="container py-8">
+<div class="row vh-100">
+    <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
+        <img src="img/Brent.jpg" alt="Brent Hohlweg" class="w-100 img-fluid rounded mx-auto img-thumbnail">
+    </div>
+    <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center">
+      <div class="d-flex justify-content-between">
+        <h1 class="display-4 w-100">
+            Brent Hohlweg
+        </h1>
+        <div class="icon d-flex flex-row">
+          <a href="https://www.facebook.com/steamtraincreative">
+            <svg class="fill-brand">
+              <use xlink:href="{{ $.Site.BaseURL }}img/brands.svg#facebook-square"></use>
+            </svg>
+          </a>
+          <a href="http://linkedin.com/in/brenthohlweg">
+            <svg class="fill-brand">
+              <use xlink:href="{{ $.Site.BaseURL }}img/brands.svg#linkedin"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+        <p>
+          Brent holds a Fine Arts Degree from Emily Carr University of Art & Design. He brings over two decades of real world effective marketing, branding, creative and digital solutions to every project. He is passionate about how marketing, brand, design and digital intersect to propel companies to leaders in their communities.
+
+Before founding Steam Train Creative he Co-Founded Men In Kilts. At Men In Kilts he built the brand from 40k to over 5 million in sales, landing the company on NBC, CNBC, CNN, MSNBC, ABC, CBS, FOX Local, FOX Business, Entrepreneur Magazine, The National Post, Canadian Business Franchising Magazine, AMEX Business Open Forum, The Vancouver Sun, Business In Vancouver, CityTV, Shaw TV, Global National TV, tons of radio shows, and many more print and online publications before successfully selling and exiting.
+        </p>
+        <form id="contact-form" method="POST" action="https://usebasin.com/f/4946113b2ff4" role="form">
+  
+            <div class="messages"></div>
+    
+            <div class="controls">
+    
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="form_name">Name *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                      <label for="form_email">{{ i18n "email" }} *</label>
+                      <input id="form_email" type="email" name="email" class="form-control"  required="required" data-error="Valid email is required.">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" rows="4" required data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <input type="submit" class="btn btn-primary btn-send" value="{{ i18n "send" }}">
+                </div>
+              </div>
+             
+            </div>
+    
+            </form>
+    </div>
+</div>
+</div>
+{{ end }}
