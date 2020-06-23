@@ -1,4 +1,4 @@
-baseURL = "https://www.brenthohlweg.com/"
+baseURL = "/"
 theme = "boot"
 relativeURLs = true
 googleAnalytics = "UA-XXX" # Your Analytics ID here
