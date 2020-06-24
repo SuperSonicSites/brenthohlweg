@@ -1,8 +1,8 @@
 {{ define "main" }}
 <div class="container py-8">
-<div class="row vh-100">
+<div class="row vh-100 pb-8">
     <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
-        <img src="img/Brent.jpg" alt="Brent Hohlweg" class="w-100 img-fluid rounded mx-auto img-thumbnail">
+        <img src="{{ $.Site.BaseURL }}img/Brent.jpg" alt="Brent Hohlweg" class="w-100 img-fluid rounded mx-auto img-thumbnail">
     </div>
     <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center">
       <div class="d-flex justify-content-between">
@@ -66,4 +66,7 @@
     </div>
 </div>
 </div>
+<footer class="container">
+  <p>Handcrafted with ❤️ by <a href="https://www.supersonicsites.com" class="origin">SuperSonic Sites</a></p>
+</footer>
 {{ end }}
